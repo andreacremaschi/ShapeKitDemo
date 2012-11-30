@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		CD00688D1668BB410036627F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9A7B51667CADC0008D661 /* main.m */; };
+		CD90C1541668A2B9006E5D8F /* NSString+HexToData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9A7B21667CAD30008D661 /* NSString+HexToData.m */; };
+		CD90C1551668A2B9006E5D8F /* ShapeKit+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9A7B41667CAD30008D661 /* ShapeKit+MapKit.m */; };
+		CD90C1561668A2B9006E5D8F /* ShapeKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9A7AD1667CABB0008D661 /* ShapeKitAppDelegate.m */; };
+		CD90C1571668A2B9006E5D8F /* ShapeKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA9A7AF1667CABB0008D661 /* ShapeKitViewController.m */; };
+		CD90C1581668A2BE006E5D8F /* libShapeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD90C1501668A260006E5D8F /* libShapeKit.a */; };
+		CDA9A7BD1667CAF30008D661 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA9A7B71667CAF30008D661 /* MainWindow.xib */; };
+		CDA9A7BE1667CAF30008D661 /* PlanID20-82.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA9A7B81667CAF30008D661 /* PlanID20-82.plist */; };
+		CDA9A7BF1667CAF30008D661 /* PlanID20-83.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA9A7B91667CAF30008D661 /* PlanID20-83.plist */; };
+		CDA9A7C01667CAF30008D661 /* PlanID20-84.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA9A7BA1667CAF30008D661 /* PlanID20-84.plist */; };
+		CDA9A7C21667CAF30008D661 /* ShapeKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA9A7BC1667CAF30008D661 /* ShapeKitViewController.xib */; };
+		CDDB1DD6159B511A00EC2DC4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDB1DD5159B511A00EC2DC4 /* MapKit.framework */; };
+		CEAD6FAE1220C83C0045AF2C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD6FAD1220C83C0045AF2C /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD90C14F1668A260006E5D8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD90C1481668A260006E5D8F /* ShapeKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDA9A7671667C87A0008D661;
+			remoteInfo = ShapeKit;
+		};
+		CD90C1521668A26C006E5D8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD90C1481668A260006E5D8F /* ShapeKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA9A7661667C87A0008D661;
+			remoteInfo = ShapeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* ShapeKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD90C1481668A260006E5D8F /* ShapeKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShapeKit.xcodeproj; path = ShapeKit/ShapeKit.xcodeproj; sourceTree = "<group>"; };
+		CDA9A7AC1667CABB0008D661 /* ShapeKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShapeKitAppDelegate.h; path = ShapeKitDemo/ShapeKitAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		CDA9A7AD1667CABB0008D661 /* ShapeKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ShapeKitAppDelegate.m; path = ShapeKitDemo/ShapeKitAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		CDA9A7AE1667CABB0008D661 /* ShapeKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShapeKitViewController.h; path = ShapeKitDemo/ShapeKitViewController.h; sourceTree = SOURCE_ROOT; };
+		CDA9A7AF1667CABB0008D661 /* ShapeKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ShapeKitViewController.m; path = ShapeKitDemo/ShapeKitViewController.m; sourceTree = SOURCE_ROOT; };
+		CDA9A7B11667CAD30008D661 /* NSString+HexToData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+HexToData.h"; path = "ShapeKitDemo/NSString+HexToData.h"; sourceTree = SOURCE_ROOT; };
+		CDA9A7B21667CAD30008D661 /* NSString+HexToData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+HexToData.m"; path = "ShapeKitDemo/NSString+HexToData.m"; sourceTree = SOURCE_ROOT; };
+		CDA9A7B31667CAD30008D661 /* ShapeKit+MapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShapeKit+MapKit.h"; path = "ShapeKitDemo/ShapeKit+MapKit.h"; sourceTree = SOURCE_ROOT; };
+		CDA9A7B41667CAD30008D661 /* ShapeKit+MapKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShapeKit+MapKit.m"; path = "ShapeKitDemo/ShapeKit+MapKit.m"; sourceTree = SOURCE_ROOT; };
+		CDA9A7B51667CADC0008D661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ShapeKitDemo/main.m; sourceTree = "<group>"; };
+		CDA9A7B61667CADC0008D661 /* ShapeKitDemo_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ShapeKitDemo_Prefix.pch; path = ShapeKitDemo/ShapeKitDemo_Prefix.pch; sourceTree = "<group>"; };
+		CDA9A7B71667CAF30008D661 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ShapeKitDemo/MainWindow.xib; sourceTree = "<group>"; };
+		CDA9A7B81667CAF30008D661 /* PlanID20-82.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "PlanID20-82.plist"; path = "ShapeKitDemo/PlanID20-82.plist"; sourceTree = "<group>"; };
+		CDA9A7B91667CAF30008D661 /* PlanID20-83.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "PlanID20-83.plist"; path = "ShapeKitDemo/PlanID20-83.plist"; sourceTree = "<group>"; };
+		CDA9A7BA1667CAF30008D661 /* PlanID20-84.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "PlanID20-84.plist"; path = "ShapeKitDemo/PlanID20-84.plist"; sourceTree = "<group>"; };
+		CDA9A7BB1667CAF30008D661 /* ShapeKitDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ShapeKitDemo-Info.plist"; path = "ShapeKitDemo/ShapeKitDemo-Info.plist"; sourceTree = "<group>"; };
+		CDA9A7BC1667CAF30008D661 /* ShapeKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShapeKitViewController.xib; path = ShapeKitDemo/ShapeKitViewController.xib; sourceTree = "<group>"; };
+		CDDB1DD5159B511A00EC2DC4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEAD6FAD1220C83C0045AF2C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD90C1581668A2BE006E5D8F /* libShapeKit.a in Frameworks */,
+				CDDB1DD6159B511A00EC2DC4 /* MapKit.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				CEAD6FAE1220C83C0045AF2C /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9A7931667C94D0008D661 /* ShapeKit categories */,
+				CDA9A7AC1667CABB0008D661 /* ShapeKitAppDelegate.h */,
+				CDA9A7AD1667CABB0008D661 /* ShapeKitAppDelegate.m */,
+				CDA9A7AE1667CABB0008D661 /* ShapeKitViewController.h */,
+				CDA9A7AF1667CABB0008D661 /* ShapeKitViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ShapeKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9A7B51667CADC0008D661 /* main.m */,
+				CDA9A7B61667CADC0008D661 /* ShapeKitDemo_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9A7B71667CAF30008D661 /* MainWindow.xib */,
+				CDA9A7B81667CAF30008D661 /* PlanID20-82.plist */,
+				CDA9A7B91667CAF30008D661 /* PlanID20-83.plist */,
+				CDA9A7BA1667CAF30008D661 /* PlanID20-84.plist */,
+				CDA9A7BB1667CAF30008D661 /* ShapeKitDemo-Info.plist */,
+				CDA9A7BC1667CAF30008D661 /* ShapeKitViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD90C1481668A260006E5D8F /* ShapeKit.xcodeproj */,
+				CDDB1DD5159B511A00EC2DC4 /* MapKit.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				CEAD6FAD1220C83C0045AF2C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD90C1491668A260006E5D8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD90C1501668A260006E5D8F /* libShapeKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDA9A7931667C94D0008D661 /* ShapeKit categories */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9A7B11667CAD30008D661 /* NSString+HexToData.h */,
+				CDA9A7B21667CAD30008D661 /* NSString+HexToData.m */,
+				CDA9A7B31667CAD30008D661 /* ShapeKit+MapKit.h */,
+				CDA9A7B41667CAD30008D661 /* ShapeKit+MapKit.m */,
+			);
+			name = "ShapeKit categories";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ShapeKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ShapeKitDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD90C1531668A26C006E5D8F /* PBXTargetDependency */,
+			);
+			name = ShapeKitDemo;
+			productName = GeoKit;
+			productReference = 1D6058910D05DD3D006BFB54 /* ShapeKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ShapeKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD90C1491668A260006E5D8F /* Products */;
+					ProjectRef = CD90C1481668A260006E5D8F /* ShapeKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ShapeKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD90C1501668A260006E5D8F /* libShapeKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShapeKit.a;
+			remoteRef = CD90C14F1668A260006E5D8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9A7BD1667CAF30008D661 /* MainWindow.xib in Resources */,
+				CDA9A7BE1667CAF30008D661 /* PlanID20-82.plist in Resources */,
+				CDA9A7BF1667CAF30008D661 /* PlanID20-83.plist in Resources */,
+				CDA9A7C01667CAF30008D661 /* PlanID20-84.plist in Resources */,
+				CDA9A7C21667CAF30008D661 /* ShapeKitViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD00688D1668BB410036627F /* main.m in Sources */,
+				CD90C1541668A2B9006E5D8F /* NSString+HexToData.m in Sources */,
+				CD90C1551668A2B9006E5D8F /* ShapeKit+MapKit.m in Sources */,
+				CD90C1561668A2B9006E5D8F /* ShapeKitAppDelegate.m in Sources */,
+				CD90C1571668A2B9006E5D8F /* ShapeKitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD90C1531668A26C006E5D8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ShapeKit;
+			targetProxy = CD90C1521668A26C006E5D8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShapeKitDemo/ShapeKitDemo_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ShapeKit/ShapeKit/\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ShapeKitDemo/ShapeKitDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ShapeKit/libs\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/ShapeKit-fsomwevczhomqhdadhrfpjhsbidf/Build/Products/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = ShapeKitDemo;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 i386";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShapeKitDemo/ShapeKitDemo_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ShapeKit/ShapeKit/\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ShapeKitDemo/ShapeKitDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ShapeKit/libs\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/ShapeKit-fsomwevczhomqhdadhrfpjhsbidf/Build/Products/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = ShapeKitDemo;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 i386";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ShapeKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ShapeKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
