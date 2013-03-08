@@ -11,22 +11,23 @@
 //
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
-#import "ShapeKitGeometry.h"
+#import <ShapeKit/ShapeKit.h>
 
 @interface MKShapeKitGeometry: ShapeKitGeometry
-@property (strong) MKShape *geometry;
+@property (strong, nonatomic) MKShape *mapkitShape;
 
 @end
 
 @interface MKShapeKitPoint: ShapeKitPoint
-@property (strong) MKPointAnnotation *geometry;
+@property (strong, nonatomic) MKPointAnnotation *mapkitShape;
 
 @end
 
 @interface MKShapeKitPolyline: ShapeKitPolyline
-@property (strong) MKPolyline *geometry;
+@property (strong, nonatomic) MKPolyline *mapkitShape;
 @end
 
 @interface MKShapeKitPolygon: ShapeKitPolygon
-@property (strong) MKPolygon *geometry;
+@property (strong, nonatomic) MKPolygon *mapkitShape;
++(MKShapeKitPolygon *) polygonWithShapeKitPolygon: (ShapeKitPolygon *)polygon;
 @end

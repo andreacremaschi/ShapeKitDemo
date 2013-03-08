@@ -7,10 +7,11 @@
 //
 
 #import "ShapeKitViewController.h"
-#import "ShapeKit.h"
+#import <ShapeKit/ShapeKit.h>
 #import "ShapeKit+MapKit.h"
 
 #import "NSString+HexToData.h"
+
 
 @implementation ShapeKitViewController
 @synthesize theMap;
@@ -52,10 +53,16 @@
     
     // Create some geometries and add them to the map view
     MKShapeKitPoint *myPoint = [[MKShapeKitPoint alloc] initWithCoordinate:CLLocationCoordinate2DMake(49.283592, -123.104997)];
-    myPoint.geometry.title = @"0 0";
-    myPoint.geometry.subtitle = @"Next to the most awesome place in the world";
-    [theMap addAnnotation:myPoint.geometry];
-    
+    myPoint.mapkitShape.title = @"0 0";
+    myPoint.mapkitShape.subtitle = @"Next to the most awesome place in the world";
+    [theMap addAnnotation:myPoint.mapkitShape];
+
+    // Create some geometries more and add them to the map view
+    MKShapeKitPoint *myPoint2 = [[MKShapeKitPoint alloc] initWithCoordinate:CLLocationCoordinate2DMake(45.67932, 9.673462)];
+    myPoint.mapkitShape.title = @"0 0";
+    myPoint.mapkitShape.subtitle = @"Not bad here neither";
+    [theMap addAnnotation:myPoint2.mapkitShape];
+
     // Create a polygon and run it through the predicates with the point
     //ShapeKitPolygon *polygon = [[ShapeKitPolygon alloc] initWithWKT:@"POLYGON((-1 -1, -1 1, 1 1, 1 -1, -1 -1))"];
     CLLocationCoordinate2D polyCoords[7];
@@ -67,9 +74,8 @@
     polyCoords[5] = CLLocationCoordinate2DMake(49.2838634036584,-123.102745005068);
     polyCoords[6] = CLLocationCoordinate2DMake(49.283894529188,-123.102176803645);
     MKShapeKitPolygon *polygon = [[MKShapeKitPolygon alloc] initWithCoordinates:polyCoords count:7];
-
-    polygon.geometry.title = @"foo";
-    [theMap addOverlay:polygon.geometry];
+    polygon.mapkitShape.title = @"foo";
+    [theMap addOverlay:polygon.mapkitShape];
     
     if ([polygon isDisjointFromGeometry:myPoint]) {
         NSLog(@"Disjoined");
@@ -126,8 +132,6 @@
     }
     NSLog(@"Realtionship bewteen point and polygon: %@",[myPoint relationshipWithGeometry:polygon]);
     
-    NSLog(@"%@",polygon.geomType);
-    
     // Make a Polyline
 /*    CLLocationCoordinate2D coords[5];
     coords[0] = CLLocationCoordinate2DMake(49.283245,-123.105370);
@@ -149,20 +153,23 @@
     [theMap addOverlay:[line convexHull].geometry];
     [theMap addAnnotation:[line pointOnSurface].geometry];
     [theMap addAnnotation:[line centroid].geometry];
-
-    MKShapeKitGeometry *wkbPolygon = [self loadWKBGeometryFromFile: @"PlanID20-82"];
-    wkbPolygon.geometry.title = @"82";
-	[theMap addOverlay: wkbPolygon.geometry];
-
-    wkbPolygon = [self loadWKBGeometryFromFile: @"PlanID20-83"];
-    wkbPolygon.geometry.title = @"83";
-	[theMap addOverlay: wkbPolygon.geometry];
-
-    wkbPolygon = [self loadWKBGeometryFromFile: @"PlanID20-84"];
-    wkbPolygon.geometry.title = @"84";
-	[theMap addOverlay: wkbPolygon.geometry];
-	
 */
+    ShapeKitPolygon *wkbPolygon = (ShapeKitPolygon*)[self loadWKBGeometryFromFile: @"PlanID20-82"];
+    MKShapeKitPolygon *myPolygon = [MKShapeKitPolygon polygonWithShapeKitPolygon: wkbPolygon];
+    myPolygon.mapkitShape.title = @"82";
+	[theMap addOverlay: myPolygon.mapkitShape];
+
+    ShapeKitPolygon *wkbPolygon2 = (ShapeKitPolygon*)[self loadWKBGeometryFromFile: @"PlanID20-83"];
+    MKShapeKitPolygon *myPolygon2 = [MKShapeKitPolygon polygonWithShapeKitPolygon: wkbPolygon2];
+    myPolygon2.mapkitShape.title = @"83";
+	[theMap addOverlay: myPolygon2.mapkitShape];
+    
+    ShapeKitPolygon *wkbPolygon3 = (ShapeKitPolygon*)[self loadWKBGeometryFromFile: @"PlanID20-84"];
+    MKShapeKitPolygon *myPolygon3 = [MKShapeKitPolygon polygonWithShapeKitPolygon: wkbPolygon3];
+    myPolygon3.mapkitShape.title = @"84";
+	[theMap addOverlay: myPolygon3.mapkitShape];
+	
+
 
 }
 
