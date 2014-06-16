@@ -40,7 +40,13 @@
         CLLocationCoordinate2D coords[self.numberOfCoords];
         for (int i=0;i<self.numberOfCoords;i++)
             coords[i]=[self coordinateAtIndex:i];
-        _mapkitShape = [MKPolygon polygonWithCoordinates: coords count: self.numberOfCoords];
+        
+        // Copy the interior rings
+        NSMutableArray *interiorMKPolys = [NSMutableArray array];
+        for (ShapeKitPolygon *poly in self.interiors)
+            [interiorMKPolys addObject: [poly MKPolygon]];
+        
+        _mapkitShape = [MKPolygon polygonWithCoordinates: coords count: self.numberOfCoords interiorPolygons:interiorMKPolys]
     }
     return _mapkitShape;
 }
